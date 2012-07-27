@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: project_quick_one_development
+  reconnect: false
+  pool: 10
+  min_messages: WARNING
+
+test:
+  adapter: postgresql
+  database: project_quick_one_test
+  reconnect: false
+  pool: 10
+  min_messages: WARNING
