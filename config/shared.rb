@@ -14,10 +14,4 @@ dbconfig = YAML.load(ERB.new(File.read("#{File.dirname(__FILE__)}/database.yml")
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/#{dbconfig[RACK_ENV]['database']}")
 
-class Note
-  include DataMapper::Resource
-  property :id, Serial
-  property :note, String
-end
-
 DataMapper.auto_upgrade!
