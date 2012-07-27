@@ -19,4 +19,5 @@ group :test do
   gem "rack-test"         , "~> 0.6.1"
   gem "rspec"             , "~> 2.11.0"
   gem "webmock"           , "~> 1.8.7"
+  gem "dm-rspec"          , "~> 0.2.3"
 end
