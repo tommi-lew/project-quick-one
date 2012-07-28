@@ -15,9 +15,7 @@ describe NoteTaker do
     end
 
     context 'duplicates' do
-      before do
-        NoteTaker.take_note("some description")
-      end
+      before { NoteTaker.take_note("some description") }
 
      it 'should not save to database' do
        expect {
